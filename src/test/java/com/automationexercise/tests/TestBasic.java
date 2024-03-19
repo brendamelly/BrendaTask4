@@ -5,6 +5,7 @@ import com.automationexercise.utils.PropertiesLoader;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 
@@ -15,7 +16,6 @@ public class TestBasic {
     public static synchronized WebDriver getDriver() {
         return tdriver.get();
     }
-
     @BeforeMethod
     public void setup() throws IOException {
         String url = PropertiesLoader.loadProperty("url");

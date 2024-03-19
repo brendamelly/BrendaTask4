@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoggedHomePage {
 
-    @FindBy(xpath = "//*[@id='header']/div/div/div/div[2]/div/ul/li[10]/a/b")
+    @FindBy(xpath = "//html/body/header/div/div/div/div[2]/div/ul/li[10]/a/b")
     private WebElement username;
 
     @FindBy(xpath = "//header/div/div/div/div[2]/div/ul/li[5]/a")

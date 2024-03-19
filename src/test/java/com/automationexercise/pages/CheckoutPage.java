@@ -1,5 +1,6 @@
 package com.automationexercise.pages;
 
+import com.automationexercise.utils.SeleniumHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +22,7 @@ public class CheckoutPage {
     @FindBy(css = "textarea[name='message']")
     private WebElement comment;
 
-    @FindBy(css = "a[href='/payment']")
+    @FindBy(xpath = "//a[.='Place Order']")
     private WebElement placeOrderButton;
 
     private WebDriver driver;
@@ -51,6 +52,7 @@ public class CheckoutPage {
 
     public PaymentPage enterComment(String text) {
         comment.sendKeys(text);
+        SeleniumHelper.waitForElementToBeClickable(driver, placeOrderButton);
         placeOrderButton.click();
         return new PaymentPage(driver);
     }
