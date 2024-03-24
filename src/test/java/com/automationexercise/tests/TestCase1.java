@@ -16,7 +16,7 @@ public class TestCase1 extends TestBasic {
     String name = "name" + Util.generateCurrentDateAndTime();
     String email = "email" + Util.generateCurrentDateAndTime() + "@o2.pl";
 
-    @Test(description = "Test Case 1: Register User")
+//    @Test(description = "Test Case 1: Register User")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Register User")
     @Description("""

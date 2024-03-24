@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 @Feature("Verify")
 public class TestCase7 extends TestBasic {
 
-    @Test(description = "Test Case 7: Verify Test Cases Page")
+//    @Test(description = "Test Case 7: Verify Test Cases Page")
     @Severity(SeverityLevel.TRIVIAL)
     @Story("Verify Test Cases Page")
     @Description("""

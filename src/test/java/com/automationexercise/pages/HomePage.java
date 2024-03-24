@@ -39,7 +39,7 @@ public class HomePage extends TestBasic {
     @FindBy(xpath = "//*[@id='accordian']/div[1]/div[1]/h4/a/span/i")
     private WebElement womenCategory;
 
-    @FindBy(css = "a[href='/category_products/1']")
+    @FindBy(css = "[href='/category_products/1']")
     private WebElement dressCategory;
 
     @FindBy(css = "div[class='recommended_items'] h2")

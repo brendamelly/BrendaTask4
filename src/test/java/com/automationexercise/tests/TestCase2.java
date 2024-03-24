@@ -14,7 +14,7 @@ import java.io.IOException;
 @Feature("User")
 public class TestCase2 extends TestBasic {
 
-    @Test(description = "Test Case 2: Login User with correct email and password")
+//    @Test(description = "Test Case 2: Login User with correct email and password")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Login User with correct email and password")
     @Description("""

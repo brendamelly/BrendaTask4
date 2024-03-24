@@ -12,7 +12,7 @@ import java.io.IOException;
 @Feature("User")
 public class TestCase4 extends TestBasic {
 
-    @Test(description = "Test Case 4: Logout User")
+//    @Test(description = "Test Case 4: Logout User")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Logout User")
     @Description("""

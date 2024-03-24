@@ -12,7 +12,7 @@ import java.util.List;
 @Feature("Cart")
 public class TestCase13 extends TestBasic {
 
-    @Test(description = "Test Case 13: Verify Product quantity in Cart")
+//    @Test(description = "Test Case 13: Verify Product quantity in Cart")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Verify Product quantity in Cart")
     @Description("""

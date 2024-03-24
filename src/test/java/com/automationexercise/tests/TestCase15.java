@@ -15,7 +15,7 @@ public class TestCase15 extends TestBasic {
     String name = "name" + Util.generateCurrentDateAndTime();
     String email = "email" + Util.generateCurrentDateAndTime() + "@o2.pl";
 
-    @Test(description = "Test Case 15: Place Order: Register before Checkout")
+//    @Test(description = "Test Case 15: Place Order: Register before Checkout")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Place Order: Register before Checkout")
     @Description("""

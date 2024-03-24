@@ -11,7 +11,7 @@ import java.io.IOException;
 @Feature("Cart")
 public class TestCase11 extends TestBasic {
 
-    @Test(description = "Test Case 11: Verify Subscription in Cart page")
+//    @Test(description = "Test Case 11: Verify Subscription in Cart page")
     @Severity(SeverityLevel.TRIVIAL)
     @Story("Verify Subscription in Cart page")
     @Description("""

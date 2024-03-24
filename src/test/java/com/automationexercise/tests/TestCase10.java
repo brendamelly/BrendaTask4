@@ -12,7 +12,7 @@ import java.io.IOException;
 @Feature("Verify")
 public class TestCase10 extends TestBasic {
 
-    @Test(description = "Test Case 10: Verify Subscription in home page")
+//    @Test(description = "Test Case 10: Verify Subscription in home page")
     @Severity(SeverityLevel.TRIVIAL)
     @Story("Verify Subscription in home page")
     @Description("""

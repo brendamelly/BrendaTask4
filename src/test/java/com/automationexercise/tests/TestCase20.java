@@ -41,11 +41,11 @@ public class TestCase20 extends TestBasic {
         List<String> productsNames = TestCase9.verifyAllTheProductsRelatedToSearchAreVisible();
         new ProductsPage(getDriver()).addAllProducts();
         clickCartButtonAndVerifyThatProductsAreVisibleInCart(productsNames);
-//        new HomePage(getDriver())
-//                .signupLoginClick()
-//                .fillCorrectLogin(JSONReader.existingUser("email"), JSONReader.existingUser("password"));
-//        verifyThatThoseProductsAreVisibleInCartAfterLoginAsWell(productsNames);
-//        verifyThatCartIsEmpty();
+        new HomePage(getDriver())
+                .signupLoginClick()
+                .fillCorrectLogin(JSONReader.existingUser("email"), JSONReader.existingUser("password"));
+        verifyThatThoseProductsAreVisibleInCartAfterLoginAsWell(productsNames);
+        verifyThatCartIsEmpty();
     }
 
     @Step("Click 'Cart' button and verify that products are visible in cart")
@@ -58,18 +58,18 @@ public class TestCase20 extends TestBasic {
             System.out.println("Search: " + productsNames.get(i) + " = Added: " + productsNamesAdded.get(i));
         }
     }
-//
-//    @Step("Verify that those products are visible in cart after login as well")
-//    private void verifyThatThoseProductsAreVisibleInCartAfterLoginAsWell(@NotNull List<String> productsNames) {
-//        clickCartButtonAndVerifyThatProductsAreVisibleInCart(productsNames);
-//    }
-//
-//    @Step("Verify 'Cart is empty! Click here to buy products.' is visible")
-//    private void verifyThatCartIsEmpty() throws InterruptedException {
-//        String emptyCartText = new CartPage(getDriver())
-//                .deleteAllAddedProducts()
-//                .getEmptyCartSpan()
-//                .getText();
-//        Assert.assertEquals(emptyCartText, "Cart is empty! Click here to buy products.", "Verify 'Cart is empty! Click here to buy products.' is visible");
-//    }
+
+    @Step("Verify that those products are visible in cart after login as well")
+    private void verifyThatThoseProductsAreVisibleInCartAfterLoginAsWell(@NotNull List<String> productsNames) {
+        clickCartButtonAndVerifyThatProductsAreVisibleInCart(productsNames);
+    }
+
+    @Step("Verify 'Cart is empty! Click here to buy products.' is visible")
+    private void verifyThatCartIsEmpty() throws InterruptedException {
+        String emptyCartText = new CartPage(getDriver())
+                .deleteAllAddedProducts()
+                .getEmptyCartSpan()
+                .getText();
+        Assert.assertEquals(emptyCartText, "Cart is empty! Click here to buy products.", "Verify 'Cart is empty! Click here to buy products.' is visible");
+    }
 }

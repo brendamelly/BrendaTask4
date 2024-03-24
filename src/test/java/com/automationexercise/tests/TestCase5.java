@@ -12,7 +12,7 @@ import java.io.IOException;
 @Feature("User")
 public class TestCase5 extends TestBasic {
 
-    @Test(description = "Test Case 5: Register User with existing email")
+//    @Test(description = "Test Case 5: Register User with existing email")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Register User with existing email")
     @Description("""

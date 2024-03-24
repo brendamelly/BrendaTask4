@@ -17,8 +17,8 @@ public class EnterAccountInformationPage extends TestBasic {
     @FindBy(xpath = "//b[contains(.,'Enter Account Information')]")
     private WebElement enterAccountInformation;
 
-    @FindBy(id = "id_gender1")
-    private WebElement titleMrCheckbox;
+    @FindBy(id = "id_gender2")
+    private WebElement titleMrsCheckbox;
 
     @FindBy(id = "password")
     private WebElement passwordInput;
@@ -84,7 +84,7 @@ public class EnterAccountInformationPage extends TestBasic {
 
     public AccountCreatedPage fillAccountDetails() throws IOException, ParseException {
         String password = "pass" + Util.generateCurrentDateAndTime();
-        titleMrCheckbox.click();
+        titleMrsCheckbox.click();
         passwordInput.sendKeys(password);
         Select days = new Select(daysSelect);
         days.selectByValue(JSONReader.accountDetails("day"));

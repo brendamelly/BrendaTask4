@@ -1,11 +1,9 @@
 package com.automationexercise.tests;
 
 import com.automationexercise.pages.CartPage;
-import com.automationexercise.pages.CheckoutPage;
 import com.automationexercise.pages.HomePage;
 import com.automationexercise.pages.LoggedHomePage;
 import com.automationexercise.utils.JSONReader;
-import com.automationexercise.utils.Util;
 import io.qameta.allure.*;
 import org.json.simple.parser.ParseException;
 import org.testng.Assert;

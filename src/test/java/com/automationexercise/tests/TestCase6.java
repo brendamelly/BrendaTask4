@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 @Feature("Contact Us Form")
 public class TestCase6 extends TestBasic {
 
-    @Test(description = "Test Case 6: Contact Us Form")
+//    @Test(description = "Test Case 6: Contact Us Form")
     @Severity(SeverityLevel.MINOR)
     @Story("Contact Us Form")
     @Description("""

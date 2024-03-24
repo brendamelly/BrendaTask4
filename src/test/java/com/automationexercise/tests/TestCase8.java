@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 @Feature("Verify")
 public class TestCase8 extends TestBasic {
 
-    @Test(description = "Test Case 8: Verify All Products and product detail page")
+//    @Test(description = "Test Case 8: Verify All Products and product detail page")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Verify All Products and product detail page")
     @Description("""

@@ -1,6 +1,7 @@
 package com.automationexercise.pages;
 
 import com.automationexercise.utils.SeleniumHelper;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -105,6 +106,7 @@ public class ProductsPage {
     }
 
     public ProductsPage tShirtsCategoryClick() {
+        SeleniumHelper.waitForElementToBeClickable(driver, tShirtsCategory);
         tShirtsCategory.click();
         return this;
     }
@@ -119,6 +121,7 @@ public class ProductsPage {
     }
 
     public ProductsPage madameBrandClick() {
+        SeleniumHelper.waitForElementToBeClickable(driver, madameBrand);
         madameBrand.click();
         return this;
     }

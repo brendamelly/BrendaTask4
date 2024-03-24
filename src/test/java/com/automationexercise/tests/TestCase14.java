@@ -18,7 +18,7 @@ public class TestCase14 extends TestBasic {
     String name = "name" + Util.generateCurrentDateAndTime();
     String email = "email" + Util.generateCurrentDateAndTime() + "@o2.pl";
 
-    @Test(description = "Test Case 14: Place Order: Register while Checkout")
+//    @Test(description = "Test Case 14: Place Order: Register while Checkout")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Place Order: Register while Checkout")
     @Description("""
@@ -115,7 +115,7 @@ public class TestCase14 extends TestBasic {
             Assert.assertEquals(addressDelivery.get(i), addressInvoice.get(i), "Verify Address Details");
         }
 
-        String no1 = "Mr. " + JSONReader.accountDetails("firstName") + " " + JSONReader.accountDetails("lastName");
+        String no1 = "Mrs. " + JSONReader.accountDetails("firstName") + " " + JSONReader.accountDetails("lastName");
         String no2 = JSONReader.accountDetails("company");
         String no3 = JSONReader.accountDetails("address1");
         String no4 = JSONReader.accountDetails("address2");

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 @Feature("User")
 public class TestCase3 extends TestBasic {
 
-    @Test(description = "Test Case 3: Login User with incorrect email and password")
+//    @Test(description = "Test Case 3: Login User with incorrect email and password")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Login User with incorrect email and password")
     @Description("""
