@@ -327,3 +327,4 @@ In order to generate Allure Report:
 <ol> 13. Remove all products that have been added </ol>
 <ol> 14. Verify 'Cart is empty! Click here to buy products.' is visible </ol>
 
+"# BrendaTask4" 
