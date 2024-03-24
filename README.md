@@ -328,3 +328,4 @@ In order to generate Allure Report:
 <ol> 14. Verify 'Cart is empty! Click here to buy products.' is visible </ol>
 
 "# BrendaTask4" 
+"# BrendaTask4" 
